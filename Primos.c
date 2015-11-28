@@ -9,7 +9,7 @@ int main()
 	{
 		if(IsOdd(i) == true)
 		{
-			printf("%d is an odd number", i);
+			printf("%d is an odd number\n", i);
 			i++;
 		}
 		else
