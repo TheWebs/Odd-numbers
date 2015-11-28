@@ -7,9 +7,9 @@ int main()
 {
 	while(1)
 	{
-		if(IsPrime(i) == true)
+		if(IsOdd(i) == true)
 		{
-			printf("-%d", i);
+			printf("%d is an odd number", i);
 			i++;
 		}
 		else
@@ -19,7 +19,7 @@ int main()
 	}
 }
 
-bool IsPrime(int number)
+bool IsOdd(int number)
 {
 	int adividir = 2;
 	while(adividir < number)
