@@ -1,23 +1,10 @@
 #include <stdio.h>
 int i = 0;
+#ifndef __cplusplus //---------------------this line and the other one commented are needed for non-windows OS (Kali linux in my case)
 typedef int bool;
 #define true 1
 #define false 0
-int main()
-{
-	while(1)
-	{
-		if(IsOdd(i) == true)
-		{
-			printf("%d is an odd number\n", i);
-			i++;
-		}
-		else
-		{
-			i++;
-		}
-	}
-}
+#endif //----------------------------- line number 2 (OS Problem)
 
 bool IsOdd(int number)
 {
@@ -35,3 +22,21 @@ bool IsOdd(int number)
 		return true;
 	}
 }
+
+
+int main()
+{
+	while(1)
+	{
+		if(IsOdd(i) == true)
+		{
+			printf("%d is an odd number\n", i);
+			i++;
+		}
+		else
+		{
+			i++;
+		}
+	}
+}
+
